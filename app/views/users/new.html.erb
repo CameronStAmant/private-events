@@ -1,0 +1,10 @@
+<h1>Create a new user</h1>
+
+<%= form_with model: @user, url: '/users', method: 'post' do |a| %>
+  <%= label_tag(:name, 'Name') %>
+  <%= a.text_field :name %><br><br>
+  <%= submit_tag('Create') %>
+<% end %><br>
+
+or login:
+
